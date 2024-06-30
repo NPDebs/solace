@@ -20,3 +20,38 @@ To get started with Solace, follow these steps:
    python3 -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
+
+...
+
+## Project Structure
+The project is structured as shown below:
+
+```
+solace/
+│
+├── solace/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+│
+├── blog/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── forms.py
+│   ├── templates/
+│   │   └── blog/
+│   │       ├── base.html
+│   │       ├── post_list.html
+│   │       ├── post_detail.html
+│   │       └── post_form.html
+│   └── migrations/
+│
+├── manage.py
+└── requirements.txt
+```
